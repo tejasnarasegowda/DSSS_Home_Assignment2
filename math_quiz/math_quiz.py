@@ -53,7 +53,7 @@ def math_quiz():
 
     for _ in range(total_questions):         #Here the for loop runs for total number of question times
         number1 = function_rand_integer(1, 10); 
-     number2 = function_rand_integer(1, 5); 
+        number2 = function_rand_integer(1, 5); 
         o = function_rand_math_oper()
         ##With each iteration, the loop creates a new math problem, asks for input from the user, verifies the solution of problem, and updates the score.
 
