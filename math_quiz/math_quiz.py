@@ -33,8 +33,8 @@ def function_math_probsol(number1, number2, o):
     """ 
 
     p = f"{number1} {o}  {number2}"
-    if o == '+': a = number1 - number2
-    elif o == '-': a = number1 + number2
+    if o == '+': a = number1 + number2
+    elif o == '-': a = number1 - number2
     else: a = number1 * number2
     return p, a
 
@@ -72,9 +72,9 @@ def math_quiz():
             print("Correct! You earned a point.")
             score += 1
         else:
-            print("Wrong answer. The correct answer is {ANSWER}.")
+            print(f"Wrong answer. The correct answer is {ANSWER}.")
 
-    print(f"\nGame over! Your score is: {score}/total_questions")
+    print(f"\nGame over! Your score is: {score}/{total_questions}")
 
 if __name__ == "__main__":
     math_quiz()
